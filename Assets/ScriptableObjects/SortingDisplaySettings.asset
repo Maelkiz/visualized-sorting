@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddfeb3b67ec0744ea174a3cd985d562, type: 3}
+  m_Name: SortingDisplaySettings
+  m_EditorClassIdentifier: 
+  _squarePrefab: {fileID: 5770029674461470310, guid: be73dbfd778920049ac23613fde4d8f4, type: 3}
+  _arrayLength: 40
+  _displayWidth: 15
+  _displayHeight: 8
+  _useAnimatedMoves: 1
+  _arcHeight: 0.5
+  _animationDuration: 0.1
