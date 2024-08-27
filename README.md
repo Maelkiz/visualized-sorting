@@ -18,7 +18,7 @@ The algorithms we have implemented so far are the following:
 To play with the current build, you can clone the repository or download it as a .zip. The latest build can be found as an executable in the folder "Builds". If you're not into running unknown .exe files from internet strangers, you can instead open the project in the Unity editor.
 
 ### Controls
-Everything is controlled with the keyboard, as we haven't implemented a proper UI yet. But the bindings are pretty easy to understand. The *spacebar* is used to scramble an already sorted array and to stop any currently running algorithm. And the bindings to run the algorithms are their initials, so 'B' for Bubble Sort, 'Q' for Quick Sort, and so forth. 
+Everything is controlled with the keyboard, as we haven't implemented a proper UI yet. But the bindings are pretty easy to understand. The **spacebar** is used to scramble an already sorted array and to stop any currently running algorithm. And the bindings to run the algorithms are their initials, so '**B**' for Bubble Sort, '**Q**' for Quick Sort, and so forth. 
 
 So, in summary:
 - **Spacebar** | Pause/scramble
