@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SortingDisplaySettings
   m_EditorClassIdentifier: 
   _squarePrefab: {fileID: 5770029674461470310, guid: be73dbfd778920049ac23613fde4d8f4, type: 3}
-  _arrayLength: 40
+  _arrayLength: 400
   _displayWidth: 15
   _displayHeight: 8
-  _useAnimatedMoves: 1
+  _useAnimatedMoves: 0
   _arcHeight: 0.5
   _animationDuration: 0.1

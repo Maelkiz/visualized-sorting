@@ -270,11 +270,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2509221321455134567, guid: 67b5a77409e02784888e288226d99f6e, type: 3}
       propertyPath: _applyColorization
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2509221321455134567, guid: 67b5a77409e02784888e288226d99f6e, type: 3}
       propertyPath: _timeIncrementPerIteration
-      value: 0.01
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 3698676759879361321, guid: 67b5a77409e02784888e288226d99f6e, type: 3}
       propertyPath: m_Enabled
@@ -282,7 +282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3698676759879361321, guid: 67b5a77409e02784888e288226d99f6e, type: 3}
       propertyPath: _timeIncrementPerIteration
-      value: 0.01
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 4088713165768578640, guid: 67b5a77409e02784888e288226d99f6e, type: 3}
       propertyPath: m_Enabled
@@ -298,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7134588709022997862, guid: 67b5a77409e02784888e288226d99f6e, type: 3}
       propertyPath: _timeIncrementPerIteration
-      value: 0.01
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 7195354839941937383, guid: 67b5a77409e02784888e288226d99f6e, type: 3}
       propertyPath: _applyColorization
