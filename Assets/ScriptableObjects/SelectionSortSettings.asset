@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ddfeb3b67ec0744ea174a3cd985d562, type: 3}
-  m_Name: SortingDisplaySettings
+  m_Name: SelectionSortSettings
   m_EditorClassIdentifier: 
   _squarePrefab: {fileID: 5770029674461470310, guid: be73dbfd778920049ac23613fde4d8f4, type: 3}
-  _arrayLength: 250
-  _displayWidth: 15
+  _arrayLength: 40
+  _displayWidth: 12
   _displayHeight: 8
-  _useAnimatedMoves: 0
+  _useAnimatedMoves: 1
   _arcHeight: 0.5
-  _animationDuration: 0.1
-  _succesfulSortTimeIncrement: 0.00001
+  _animationDuration: 0.5
+  _succesfulSortTimeIncrement: 0.05

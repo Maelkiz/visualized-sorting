@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
+using SortingAlgorithms;
 using UnityEngine;
 
-namespace SortingAlgorithms
+namespace Sorting
 {
     public class InsertionSortVisualizer : MonoBehaviour
     {
-        [SerializeField] float _timeIncrementPerIteration = 0.1f;
+        [SerializeField] float _timeIncrement = 0.1f;
         [SerializeField] bool _applyColorization = false;
         private SortingDisplay _sortingDisplay;
 
@@ -53,7 +54,7 @@ namespace SortingAlgorithms
                     ArrayUtility.Swap(numbers, j, j + 1);
 
                     _sortingDisplay.UpdateDisplay(numbers);
-                    yield return new WaitForSeconds(_timeIncrementPerIteration);
+                    yield return new WaitForSeconds(_timeIncrement);
 
                     if (_applyColorization)
                     {
@@ -64,7 +65,7 @@ namespace SortingAlgorithms
                     j--;
                 }
 
-                yield return new WaitForSeconds(_timeIncrementPerIteration);
+                yield return new WaitForSeconds(_timeIncrement);
 
                 if (_applyColorization)
                 {

@@ -6,7 +6,7 @@ namespace SortingAlgorithms
 {
     public class MergeSortVisualizer : MonoBehaviour
     {
-        [SerializeField] float _timeIncrementPerIteration = 0.1f;
+        [SerializeField] float _timeIncrement = 0.1f;
         private SortingDisplay _sortingDisplay;
 
         private void Start() => _sortingDisplay = GetComponent<SortingDisplay>();
@@ -40,7 +40,7 @@ namespace SortingAlgorithms
 
                 // Update the display
                 _sortingDisplay.UpdateDisplay(numbers);
-                yield return new WaitForSeconds(_timeIncrementPerIteration);
+                yield return new WaitForSeconds(_timeIncrement);
             }
 
             if (left == 0 && right == numbers.Length - 1)
@@ -110,11 +110,12 @@ namespace SortingAlgorithms
                 numbers[k] = tempRight[j];
                 j++;
                 k++;
+
             }
 
             // Update the display
             _sortingDisplay.UpdateDisplay(numbers);
-            yield return new WaitForSeconds(_timeIncrementPerIteration);
+            yield return new WaitForSeconds(_timeIncrement);
         }
     }
 }

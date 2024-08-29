@@ -6,7 +6,7 @@ namespace SortingAlgorithms
 {
     public class HeapSortVisualizer : MonoBehaviour
     {
-        [SerializeField] float _timeIncrementPerIteration = 0.1f;
+        [SerializeField] float _timeIncrement = 0.1f;
         [SerializeField] bool _applyColorization = false;
         private SortingDisplay _sortingDisplay;
 
@@ -42,7 +42,6 @@ namespace SortingAlgorithms
             {
                 // Switch first and last elements
                 ArrayUtility.Swap(numbers, i, 0);
-                //(numbers[i], numbers[0]) = (numbers[0], numbers[i]);
 
                 n--; // Decrement the length
 
@@ -82,12 +81,11 @@ namespace SortingAlgorithms
             {
                 // In the case that either child was larger a switch is perfomed
                 ArrayUtility.Swap(numbers, max, i);
-                //(numbers[max], numbers[i]) = (numbers[i], numbers[max]);
 
                 // Update the visualizer
                 _sortingDisplay.UpdateDisplay(numbers);
 
-                yield return new WaitForSeconds(_timeIncrementPerIteration);
+                yield return new WaitForSeconds(_timeIncrement);
 
                 // And a recursive call is used to ensure the entire branch is sorted
                 yield return StartCoroutine(Heapify(numbers, n, max));

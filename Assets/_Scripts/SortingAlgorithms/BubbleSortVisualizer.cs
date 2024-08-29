@@ -1,11 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-namespace SortingAlgorithms
+namespace Sorting
 {
     public class BubbleSortVisualizer : MonoBehaviour
     {
-        [SerializeField] float _timeIncrementPerIteration = 0.1f;
+        [SerializeField] float _timeIncrement = 0.1f;
         [SerializeField] bool _applyColorization = false;
         private SortingDisplay _sortingDisplay;
 
@@ -37,7 +37,6 @@ namespace SortingAlgorithms
                     {
                         // Swap elements
                         ArrayUtility.Swap(numbers, j + 1, j);
-                        //(numbers[j + 1], numbers[j]) = (numbers[j], numbers[j + 1]);
 
                         if (_applyColorization)
                         {
@@ -59,7 +58,7 @@ namespace SortingAlgorithms
                         }
                     }
 
-                    yield return new WaitForSeconds(_timeIncrementPerIteration);
+                    yield return new WaitForSeconds(_timeIncrement);
 
                     if (_applyColorization)
                     {

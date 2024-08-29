@@ -6,7 +6,7 @@ namespace SortingAlgorithms
 {
     public class QuickSortVisualizer : MonoBehaviour
     {
-        [SerializeField] float _timeIncrementPerIteration = 0.1f;
+        [SerializeField] float _timeIncrement = 0.1f;
         [SerializeField] bool _applyColorization = false;
         [SerializeField] PivotSelection _pivotSelectionStrategy = PivotSelection.FIRST;
         private SortingDisplay _sortingDisplay;
@@ -89,8 +89,7 @@ namespace SortingAlgorithms
 
                     // Update the display
                     _sortingDisplay.UpdateDisplay(numbers);
-
-                    yield return new WaitForSeconds(_timeIncrementPerIteration);
+                    yield return new WaitForSeconds(_timeIncrement);
                 }
             }
 
@@ -101,7 +100,7 @@ namespace SortingAlgorithms
             _sortingDisplay.UpdateDisplay(numbers);
 
             // Visual delay for final pivot placement
-            yield return new WaitForSeconds(_timeIncrementPerIteration);
+            yield return new WaitForSeconds(_timeIncrement);
 
             // Return the partition index
             _partionIndex = i + 1;
